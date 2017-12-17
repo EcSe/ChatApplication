@@ -1,0 +1,5 @@
+C:\Users\Elvin\Desktop\Proyectos\SlnChatApplicationWork\CapaLogica\bin\Debug\CapaLogica.dll
+C:\Users\Elvin\Desktop\Proyectos\SlnChatApplicationWork\CapaLogica\bin\Debug\CapaLogica.pdb
+C:\Users\Elvin\Desktop\Proyectos\SlnChatApplicationWork\CapaLogica\obj\Debug\CapaLogica.csprojResolveAssemblyReference.cache
+C:\Users\Elvin\Desktop\Proyectos\SlnChatApplicationWork\CapaLogica\obj\Debug\CapaLogica.dll
+C:\Users\Elvin\Desktop\Proyectos\SlnChatApplicationWork\CapaLogica\obj\Debug\CapaLogica.pdb

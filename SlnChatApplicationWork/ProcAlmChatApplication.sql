@@ -19,15 +19,15 @@ drop proc spLoginUser
 go
 
 create proc spLoginUser
-@UserName varchar(50),@Contrasena varchar(50),@EmpleadoID int
+@UserName varchar(50),@Contrasena varchar(50)
 as
 begin
 		if exists(select UserName from TUsuario
-					where UserName=@UserName and Contrasena=@Contrasena and EmpleadoID=@EmpleadoID )
+					where UserName=@UserName and Contrasena=@Contrasena)
 					select CodError=0,Mensaje = 'Usuario Logeado correctamente'
 	
 	else select CodError=1,Mensaje='No se encuentra el usuario y/o es invalido'
 end
 go	
 
-exec spLoginUser 'esalinas','06190185',1
+exec spLoginUser 'esalinas','06190185'
