@@ -50,6 +50,13 @@ UserID int,
 go 
 
 
+INSERT INTO TEmpleado VALUES('Salinas','Espinoza','Elvin')
+INSERT INTO TEmpleado VALUES('Rojas','Saldaña','Carlos')
+INSERT INTO TEmpleado VALUES('Diaz','Rodriguez','Miguel Angel')
+
+INSERT INTO TUsuario VALUES('esalinas','06190185',1)
+INSERT INTO TUsuario VALUES('crojas','123456',2)
+INSERT INTO TUsuario VALUES('mdiaz','06190185',3)
 
 
 
