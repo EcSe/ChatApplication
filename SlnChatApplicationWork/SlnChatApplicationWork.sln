@@ -45,12 +45,6 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebServices", "http://local
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataBase", "DataBase", "{64EDDA63-1D8D-4D21-8C42-FDAA654BA702}"
-	ProjectSection(SolutionItems) = preProject
-		BDChatApplication.sql = BDChatApplication.sql
-		ProcAlmChatApplication.sql = ProcAlmChatApplication.sql
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
