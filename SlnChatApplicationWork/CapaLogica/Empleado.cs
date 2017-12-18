@@ -20,5 +20,7 @@ namespace CapaLogica
         public string aMaterno { get; set; }
         public string nombres { get; set; }
 
+        //aqui vamos a intentar arreglar lo que necesitamos 
+
     }
 }
