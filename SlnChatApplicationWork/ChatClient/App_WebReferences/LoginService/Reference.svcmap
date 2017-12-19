@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9c5814d4-aef3-4bb3-b158-bc052ffd972e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="95281c83-15dd-4e61-982e-b514e685126b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <EnableDataBinding>true</EnableDataBinding>
@@ -21,8 +21,8 @@
     <MetadataSource Address="http://localhost:6597/LoginService.asmx" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="LoginService.wsdl" MetadataType="Wsdl" ID="33db7809-19e8-4df5-8855-f514f05ec16b" SourceId="1" SourceUrl="http://localhost:6597/LoginService.asmx?wsdl" />
-    <MetadataFile FileName="LoginService.disco" MetadataType="Disco" ID="c551c302-3e76-42c3-85cf-ef3264e4ae02" SourceId="1" SourceUrl="http://localhost:6597/LoginService.asmx?disco" />
+    <MetadataFile FileName="LoginService.wsdl" MetadataType="Wsdl" ID="bc7930ff-ba26-4db5-9baf-77b334f36e6f" SourceId="1" SourceUrl="http://localhost:6597/LoginService.asmx?wsdl" />
+    <MetadataFile FileName="LoginService.disco" MetadataType="Disco" ID="0f9b336d-3f80-4ec7-9b00-8776bf910490" SourceId="1" SourceUrl="http://localhost:6597/LoginService.asmx?disco" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

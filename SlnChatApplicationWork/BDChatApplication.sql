@@ -43,6 +43,7 @@ create table TMensaje
 (
 MensajeID int primary key,
 Fecha datetime,
+Texto varchar(500),
 ReceptorID int,
 UserID int,
 	foreign key (UserID) references TUsuario

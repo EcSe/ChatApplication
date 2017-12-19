@@ -18,7 +18,7 @@ namespace CapaLogica
 
         public string aPaterno { get; set; }
         public string aMaterno { get; set; }
-        public string nombres { get; set; }
+        public string Nombres { get; set; }
 
         //aqui vamos a intentar arreglar lo que necesitamos 
 

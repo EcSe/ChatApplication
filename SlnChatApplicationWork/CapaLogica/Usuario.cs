@@ -55,5 +55,41 @@ namespace CapaLogica
             }
         
         }
+
+        public bool AgregarUsuario()
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("spAgregarUsuario", conexion);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.AddWithValue("@APaterno", empleado.aPaterno);
+                cmd.Parameters.AddWithValue("@AMaterno", empleado.aMaterno);
+                cmd.Parameters.AddWithValue("@Nombres", empleado.Nombres);
+                cmd.Parameters.AddWithValue("@UserName", userName);
+                cmd.Parameters.AddWithValue("@Contrasena", EncriptarClave.encriptar(contrasena));
+                conexion.Open();
+
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                DataTable tabla = new DataTable();
+                adapter.Fill(tabla);
+                DataRow fila = tabla.Rows[0];
+
+                byte i = Convert.ToByte(fila["CodError"]);
+                mensaje = fila["Mensaje"].ToString();
+                if (i == 1) return true;
+                else return false;
+
+            }
+            catch (Exception ex)
+            {
+                mensaje = "Error: " + ex.Message;
+                return false;
+            }
+            finally
+            {
+                conexion.Close();
+            }
+        }
     }
 }

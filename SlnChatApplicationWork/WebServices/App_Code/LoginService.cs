@@ -22,6 +22,7 @@ public class LoginService : System.Web.Services.WebService {
     }
 
     Usuario usuario = new Usuario();
+    Empleado empleado = new Empleado();
 
     [WebMethod]
     public string LoginUser(string userName,string contrasena) {
@@ -31,5 +32,17 @@ public class LoginService : System.Web.Services.WebService {
         usuario.validarUsuario();
         return usuario.Mensaje;
     }
-    
+
+    [WebMethod]
+    public string AddUser(string apaterno, string amaterno, string nombre, string username, string contrasena)
+    {
+        usuario.empleado.aPaterno = apaterno;
+        usuario.empleado.aMaterno = amaterno;
+        usuario.empleado.Nombres = nombre;
+        usuario.userName = username;
+        usuario.contrasena = contrasena;
+
+        usuario.AgregarUsuario();
+        return usuario.Mensaje;
+    }
 }
