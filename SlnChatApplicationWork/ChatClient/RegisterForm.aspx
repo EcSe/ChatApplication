@@ -25,7 +25,7 @@
             <asp:TextBox ID="txtUsuario" runat="server"></asp:TextBox>
         </p>
         <asp:Label ID="Label5" runat="server" Text="Password"></asp:Label>
-        <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtContrasena" runat="server"></asp:TextBox>
         <p>
             <asp:Button ID="btnRegistrar" runat="server" OnClick="btnRegistrar_Click" Text="Registrar" />
             <asp:Button ID="btnSalir" runat="server" Text="Salir" />

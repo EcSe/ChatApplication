@@ -13,7 +13,6 @@ INSERT INTO TEmpleado VALUES(@APaterno,@AMaterno,@Nombres)
 end
 go
 
-exec spAgregarEmpleado 'Puchuri','Mamani','Eduardo'
 
 
 if OBJECT_ID('spLoginUser') is not null
@@ -31,9 +30,6 @@ begin
 	else select CodError=1,Mensaje='No se encuentra el usuario y/o es invalido'
 end
 go	
-
-exec spLoginUser 'esalinas','06190185'
-
 
 
 if OBJECT_ID('spAgregarUsuario') is not null
@@ -55,6 +51,18 @@ begin
 		else
 			select CodError=1,Mensaje='Empleado no existe'
 	end
+go
+
+if OBJECT_ID('spEnviarMensaje') is not null
+drop proc spEnviarMensaje
+go
+create proc spEnviarMensaje
+@UserEmisor int,@Texto varchar(500),@UserReceptor int,@Fecha datetime
+as
+begin
+	insert into TMensaje values(@Fecha,@Texto,@UserReceptor,@UserEmisor)
+	select CodError =0, Mensaje='Mensaje Enviado'
+end
 go
 
 

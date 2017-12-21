@@ -31,7 +31,7 @@ namespace CapaLogica
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 cmd.Parameters.AddWithValue("@UserName", userName);
-                cmd.Parameters.AddWithValue("@Contrasena", contrasena);
+                cmd.Parameters.AddWithValue("@Contrasena",contrasena);
                 conexion.Open();
 
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
@@ -67,7 +67,7 @@ namespace CapaLogica
                 cmd.Parameters.AddWithValue("@AMaterno", empleado.aMaterno);
                 cmd.Parameters.AddWithValue("@Nombres", empleado.Nombres);
                 cmd.Parameters.AddWithValue("@UserName", userName);
-                cmd.Parameters.AddWithValue("@Contrasena", EncriptarClave.encriptar(contrasena));
+                cmd.Parameters.AddWithValue("@Contrasena",EncriptarClave.Encriptacion(contrasena));
                 conexion.Open();
 
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);

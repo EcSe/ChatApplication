@@ -21,7 +21,7 @@ public partial class RegisterForm : System.Web.UI.Page
         string aMaterno = txtApaterno.Text;
         string nombre = txtNombre.Text;
         string userName = txtUsuario.Text;
-        string contrasena = txtPassword.Text;
+        string contrasena = txtContrasena.Text;
 
         string mensaje = servicio.AddUser(aPaterno,aMaterno,nombre,userName,contrasena);
         MessageBox.Show(mensaje);

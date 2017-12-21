@@ -41,7 +41,7 @@ drop table TMensaje
 go
 create table TMensaje
 (
-MensajeID int primary key,
+MensajeID int identity primary key,
 Fecha datetime,
 Texto varchar(500),
 ReceptorID int,
